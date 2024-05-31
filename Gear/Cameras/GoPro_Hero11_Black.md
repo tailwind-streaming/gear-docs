@@ -1,6 +1,6 @@
 # GoPro Hero 11 Black
 
-GoPro's latest camera.
+GoPro's 2023 revision of their main camera.
 
 [Specs](https://gopro.com/shop/cameras/hero11-black/CHDHX-111-master.html)
 
@@ -35,10 +35,13 @@ To start automatic livestreaming when WiFi is connected:
 
 1080p30 over USB.
 
-Presents as a USB ethernet device when connected. Can connect to this device and using the GoPro API, start webcam streaming. This is a UDP stream to port 8554, which appears hard-coded. This means that only one webcam can easily be attached without fiddling around with differentiating the differing source addresses. Keepalives need to be sent to keep the webcam connected.
+Presents as a USB ethernet device when connected. Can connect to this device using the GoPro API and start webcam streaming. This is a UDP stream to port 8554, which appears hard-coded. This means that only one webcam can easily be attached without fiddling around with differentiating the differing source addresses. Keepalives need to be sent to keep the webcam connected.
+
+Certain firmware versions seem to enable stabilization when being used in this mode, but others clearly do not. It may also be down to specific setting.
 
 ## Power Usage
 
-HDMI: x watts.
-Livestream: y watts.
-USB Webcam: 4 watts.
+HDMI: x watts. \
+Livestream: y watts. \
+USB Webcam: 4 watts. \
+USB Webcam (no battery): 3.25 watts.

@@ -8,9 +8,7 @@ Cheap uncompressed and compressed video. New versions seemingly using inferior c
 
 ### 1080p
 
-```bash
-Index       : 0
-Type        : Video Capture
+``` text
 Pixel Format: 'MJPG' (compressed)
 Name        : Motion-JPEG
 Size: Discrete 1920x1080
@@ -44,8 +42,6 @@ Size: Discrete 1440x900
         Interval: Discrete 0.017s (60.000 fps)
         Interval: Discrete 0.033s (30.000 fps)
 
-Index       : 1
-Type        : Video Capture
 Pixel Format: 'YUYV'
 Name        : YUYV 4:2:2
 Size: Discrete 1920x1080
@@ -78,7 +74,6 @@ Size: Discrete 1400x900
 Size: Discrete 1440x900
         Interval: Discrete 0.017s (60.000 fps)
         Interval: Discrete 0.033s (30.000 fps)
-
 ```
 
 ## Notes
@@ -87,9 +82,12 @@ Size: Discrete 1440x900
 - Needs a USB3.0 port for YUYV capture.
 - Actual chip made by "SunPlus Innovation Technology"
 - USB-c port appears to only work in one orientation.
-- Can be picky about kernels, and it doesn't seem quite fully UVC compatible.
+- Can be picky about kernels, and it doesn't seem quite fully UVC compatible
+- Will only show YUYV mode when connected to a USB3.0 port, otherwise presents MJPEG only.
 
 ## Power Usage
 
-- 1080p30 YUYV capture: x watts.
-- 1080p30 MJPEG capture: x watts.
+- 1080p30 YUYV capture: 2.95 watts.
+- 1080p60 YUYV capture: 3.25 watts.
+- 1080p30 MJPEG capture: 2.85 watts.
+- 1080p60 MJPEG capture: 3.1 watts.

@@ -1,12 +1,16 @@
 # GoPro Hero 7 Black
 
-The last GoPro camera with build in clean HDMI out. Does support RTMP streaming at
+The last GoPro camera with built in clean HDMI out. Does support RTMP streaming at low resolution.
+
+## Quality
+
+Low-light performance is poor.
 
 ## HDMI
 
 Clean HDMI out. Signal is 1080p60, but it appears to be using frame doubling.
 
-Audio is out of sync with HDMI, and the sync can sometimes vary.
+Audio and video can be out of sync in certain situations, and it seems to depend on on stabilization. Sync sometimes drifts as well, and is non-uniform (might be temperature related).
 
 ## Livestreaming
 

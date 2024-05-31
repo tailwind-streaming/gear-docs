@@ -8,23 +8,17 @@ Relatively well supported by Linux, but has a quirk where it isn't _quite_ UVC c
 
 ### 1080p60
 
-```
-Index       : 0
-Type        : Video Capture
+``` text
 Pixel Format: 'YUYV'
 Name        : YUYV 4:2:2
         Size: Discrete 1920x1080
                 Interval: Discrete 0.017s (59.940 fps)
 
-Index       : 1
-Type        : Video Capture
 Pixel Format: 'NV12'
 Name        : Y/CbCr 4:2:0
         Size: Discrete 1920x1080
                 Interval: Discrete 0.017s (59.940 fps)
 
-Index       : 2
-Type        : Video Capture
 Pixel Format: 'YU12'
 Name        : Planar YUV 4:2:0
         Size: Discrete 1920x1080
@@ -33,8 +27,21 @@ Name        : Planar YUV 4:2:0
 
 ### 4k30
 
-```
-fill
+``` text
+Pixel Format: 'YUYV'
+Name        : YUYV 4:2:2
+        Size: Discrete 3840x2160
+                Interval: Discrete 0.033s (29.970 fps)
+
+Pixel Format: 'NV12'
+Name        : Y/CbCr 4:2:0
+        Size: Discrete 3840x2160
+                Interval: Discrete 0.033s (29.970 fps)
+
+Pixel Format: 'YU12'
+Name        : Planar YUV 4:2:0
+        Size: Discrete 3840x2160
+                Interval: Discrete 0.033s (29.970 fps)
 ```
 
 ## Notes
@@ -46,8 +53,8 @@ fill
 
 ## Power Usage
 
-- 1080p30 capture: around 3.1 watts.
-- 4k30 capture: around X watts.
+- 1080p30 NV12 capture: around 2.1 watts.
+- 4k30 NV12 capture: around 3.2 watts.
 
 ## Note on colour space quirk
 
