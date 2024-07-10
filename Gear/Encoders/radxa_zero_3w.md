@@ -1,8 +1,10 @@
 # Radxa Zero 3W
 
-Small, Raspberry Pi Zero 2W equivalent, with hardware HEVC encoder capable of 1080p30.
+Small, Raspberry Pi Zero 2W equivalent, with hardware HEVC encoder capable of 1080p60.
 
 The Zero 3E version substitutes the WiFi for Ethernet (optionally supporting PoE), and is probably less useful for streaming.
+
+The board also has a 22-pin MIPI-CSI2 port, which works well with a [TC358743](../../Gear/Capture%20Card/tc358743) based HDMI capture card, with audio capture over i2s via the 40-pin GPIO header.
 
 ## USB Ports
 
@@ -12,7 +14,6 @@ To toggle the USB2 port into host mode (to be able to use a hub, for example), t
 
 ## Quirks/Issues
 
-- i2s may be broken, which means that it can't be used to audio input.
 - The SD card slot is quite slow.
 
 ## Power Usage
